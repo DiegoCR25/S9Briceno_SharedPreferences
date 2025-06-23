@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPerfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil de Usuario"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewPerfil"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/perfil_usuario"
+            android:contentDescription="Imagen de perfil"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editTextEdad"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/buttonGuardarPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar Perfil"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonCargarPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargar Perfil" />
+
+    </LinearLayout>
+</ScrollView>
